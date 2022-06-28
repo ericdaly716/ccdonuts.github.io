@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!--========== BOX ICONS ==========-->
+        <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+
+        <!--========== CSS ==========-->
+        <link rel="stylesheet" href="assets/css/styles.css">
+
+        <!-- SWIPER CSS -->
+        <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+        <title>CC Donuts Webpage</title>
+    </head>
+    <body>
+
+        <!--========== SCROLL TOP ==========-->
+        <a href="#" class="scrolltop" id="scroll-top">
+            <i class='bx bx-chevron-up scrolltop__icon'></i>
+        </a>
+
+        <!--========== HEADER ==========-->
+        <header class="l-header" id="header">
+            <nav class="nav bd-container">
+                <a href="#" class="nav__logo">CC DONUTS</a>
+
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item"><a href="#home" class="nav__link active-link">Home</a></li>
+                        <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+                        <!--<li class="nav__item"><a href="#services" class="nav__link">Services</a></li>-->
+                        <li class="nav__item"><a href="#menu" class="nav__link">Menu</a></li>
+                        <li class="nav__item"><a href="#contact" class="nav__link">Contact us</a></li>
+
+                        <li><i class='bx bx-moon change-theme' id="theme-button"></i></li>
+                    </ul>
+                </div>
+
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class='bx bx-menu'></i>
+                </div>
+            </nav>
+        </header>
+
+        <main class="l-main">
+            <!--========== HOME ==========-->
+            <section class="home" id="home">
+                <div class="home__container bd-container bd-grid">
+                    <div class="home__data">
+                        <h1 class="home__title">CC Donuts</h1>
+                        <h2 class="home__subtitle">Try the our Donuts and Kolaches.</h2>
+                        <a href="#menu" class="button">View Menu</a>
+                    </div>
+
+                    <!-- <img src="assets/img/donut1.jpg" alt="" class="home__img"> -->
+
+                    <!-- Swiper -->
+            <div class="swiper mySwiper home__img">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="assets/img/donut1.jpg" class="home__img"></div>
+                <div class="swiper-slide"><img src="assets/img/donut2.jpg" class="home__img"></div>
+                <div class="swiper-slide"><img src="assets/img/kolache.jpg"></div>
+                <div class="swiper-slide"><img src="assets/img/milkTea.jpg"></div>
+                
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        pagination: {
+          el: ".swiper-pagination",
+          dynamicBullets: true,
+        },
+        autoplay: {
+    delay: 3000,
+    disableOnInteraction: false,
+  },
+      });
+
+    </script>
+
+
+                </div>
+            </section>
+
+
+
+            <img src="assets/img/ccmenu.png" class="donut_img" id="menu">
+
+
+
+
+            
+
+            
+
+          <!--========== ABOUT ==========-->
+            <section class="about section bd-container" id="about">
+                <div class="about__container  bd-grid">
+                    <div class="about__data">
+                        <span class="section-subtitle about__initial">About us</span>
+                        <h2 class="section-title about__initial">We make the best <br>Donuts</h2>
+                        <p class="about__description">We make the best donuts in the city, with excellent customer service, the best meals and at the best price, visit us.</p>
+                        <a href="#" class="button">Explore history</a>
+                    </div>
+
+                    <img src="assets/img/milkTea2.jpg" alt="" class="about__img">
+                </div>
+            </section>
+ 
+
+
+
+
+            <!--========== CONTACT US ==========-->
+            <section class="contact section bd-container" id="contact">
+                <div class="contact__container bd-grid">
+                    <div class="contact__data">
+                        <span class="section-subtitle contact__initial">Let's talk</span>
+                        <h2 class="section-title contact__initial">Contact us</h2>
+                        <p class="contact__description">If you have any feedback or recommend feel free to contact us.</p>
+                    </div>
+
+                    <div class="contact__button">
+                        <a href="#" class="button">Contact us now</a>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!--========== FOOTER ==========-->
+        <footer class="footer section bd-container">
+            <div class="footer__container bd-grid">
+                <div class="footer__content">
+                    <a href="#" class="footer__logo">CC Donuts</a>
+                    <span class="footer__description">Donuts Shop</span>
+                    <div>
+                        <a href="#" class="footer__social"><i class='bx bxl-facebook'></i></a>
+                        <a href="#" class="footer__social"><i class='bx bxl-instagram'></i></a>
+                        <a href="#" class="footer__social"><i class='bx bxl-twitter'></i></a>
+                    </div>
+                </div>
+
+                <div class="footer__content">
+                    <h3 class="footer__title">Services</h3>
+                    <ul>
+                        <li><a href="#" class="footer__link">Pricing</a></li>
+                        <li><a href="#" class="footer__link">Fast food</a></li>
+                        <li><a href="#" class="footer__link">Friendly</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer__content">
+                    <h3 class="footer__title">Information</h3>
+                    <ul>
+                        <li><a href="#" class="footer__link">Event</a></li>
+                        <li><a href="#" class="footer__link">Contact us</a></li>
+                        <li><a href="#" class="footer__link">Privacy policy</a></li>
+                        <li><a href="#" class="footer__link">Terms of services</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer__content">
+                    <h3 class="footer__title">Adress</h3>
+                    <ul>
+                        <li>5346 Everhard RD</li>
+                        <li>Corpus Christi, TX 78411</li>
+                        <li>(361) 442-2393</li>
+                        <li></li>
+                    </ul>
+                </div>
+            </div>
+
+            <p class="footer__copy">&#169; 2022 CC Donuts. All right reserved</p>
+        </footer>
+
+        <!--========== SCROLL REVEAL ==========-->
+        <script src="https://unpkg.com/scrollreveal"></script>
+
+        <!--========== MAIN JS ==========-->
+        <script src="assets/js/main.js"></script>
+
+        <!-- SWIPER -->
+        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    </body>
+</html>
